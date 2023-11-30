@@ -1,0 +1,7 @@
+# bluegreen.yaml
+
+mediawiki:
+  enabled: false
+  service:
+    name: my-mediawiki-blue
+  replicaCount: 0
