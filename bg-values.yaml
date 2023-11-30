@@ -1,0 +1,16 @@
+# values.yaml
+
+mediawiki:
+  enabled: true
+  deploymentStrategy: BlueGreen
+
+  blueGreen:
+    activeService: my-mediawiki-blue
+    previewService: my-mediawiki-green
+
+autoscaling:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 5  # Adjust maxReplicas based on your requirements
+  targetCPUUtilizationPercentage: 70  # Adjust targetCPUUtilizationPercentage based on your requirements
+
